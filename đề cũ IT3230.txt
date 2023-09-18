@@ -1,0 +1,117 @@
+ĐỀ THI CUỐI KỲ MÔN IT3230
+KÍP 1: 8H-11H30
+THỜI GIAN THI 90 PHÚT 
+Họ và tên:.................................... MSSV:.......................... 
+Viết chương trình C in ra menu để người dùng thực hiện các chức năng sau đây: 
+====Program for management computers====
+1) Load Data Files:
+2) Update CPU info:
+3) Update Ram info:
+4) Search:
+5) QuitSV
+viết được chương trình sao cho in ra menu và nhận lựa chọn của người dùng là 1 giá trị từ1 đến 5, nếu sai thì thông báo nhập lại(0.5 ĐIỂM). Nếu chương trình thoát khi người dùngnhập 5 thì sinh viên sẽ được thêm(0.5ĐIỂM).
+1) Chương trình cho phép người dùng nhập vào một tên file (giả sử file sẽ nằm cùng thư mụcvới file thực thi để khi mở file không cần đường dẫn) có định dạng: 
+<Số lượng máy> 
+<Tên CPU> <Dunglượng RAM> 
+… 
+<Tên CPU> <Dung lượng RAM> 
+Ví dụ 1 file như sau: 
+3
+I7 8
+I5 8
+I9 16
+Chú ý rằng tên CPU là một xâu ký tự có các giá trị như sau: I3, I5, I7 (hoặc i3, i5, i7), Dunglượng RAM là 1 số nguyên có các giá trị sau: 1, 2, 4, 8, 16, 32.  
+Nếu nhập sai tên (file không tồn tại) thì in ra màn hình“File khong ton tai” (0.5 ĐIỂM)vàquay lại menu chính. Nếu nhập đúng tên file (giả định rằng dữ liệu trong file là luôn đúng) thìdữ liệu trong file sẽ được đọc vànối thêm vào danh sách máy của chương trình đang có, sauđó in ra màn hình số máy trong file vừa đọc “So may vua them moi: <số lượng>” (0.5 ĐIỂM) và dừng chức năng này để quay về menu chính.Nếu người dùng thực hiện chức năng nàynhiều lần(có thể đọc từ nhiều file khác nhau với định dạng như trên) thì danh sách máy sẽđược nối dài sau mỗi lần nhập. Nếu tổng số máy trong danh sách của chương trình đã là20 thì các máy tiếp theo sẽ không được lưu trữ; chương trình in ra màn hình“Danh sach da day,khong them duoc” (0.5 ĐIỂM). 
+2) Chương trình cho phép cập nhật tên CPU có trong các máy. Đầu tiên chương trình yêu cầungười dùng nhập vào ID của máy muốn nhập, khi nhập xong một máy thì sẽ tự động yêu cầunhập cho máy có ID lớn hơn. Nếu người dùng nhập sai ID của máy sẽ yêu cầu nhập lại (Chúý tên CPU đã cho trước ở trên) (0.5 ĐIỂM). Chức năng này sẽdừng  nếu người dùng nhập...
+
+******
+
+ Đề thi học kì môn học: C Programming Basic(Thờ i gian làm bài: 90 phút, sao chép bài thi sẽ bị 0 điểm)
+Chương trình quản lý kết quả bóng đá 
+K ết quả  bóng đá giữa các câu lạc bộ của một mùa giải được lưu trong file văn bản “BongDa.txt”,trong đó mỗi dòng chứa thông tin về một tr ận đấu giữa 2 đội, bao gồm: Mã đội bóng thứ nhất (mộtxâu kí tự độ dài tối đa 10, không chứa kí tự tr ắng, ví d ụ:FC01), mã đội bóng thứ hai (định d ạngtương tự như trên), và tỉ số giữa hai đội này (hai số nguyên cách nhau bở i d ấu tab,ví d ụ: 2 
+1). Các thông tin này cách nhau bở i các d ấu tab(‘\t’). Ví d ụ:
+FC01 FC03 2 1
+FC02 FC01 0 0
+………………………………………. 
+Thông tin như trên có nghĩa là đội FC01đáthắng đội FC03 vớ i tỉ số 2-1, hai đội FC02 và FC01 đáhòa nhau vớ i tỉ số 0-0.Điểm số được tính như sau: hai đội hòa nhau thì mỗi đội đượ c cộng 1 điểm,đội thắngđượ c cộng 3 điểm, đội thua được 0 điểm; điểm cuối cùng của một đội là tổng điểm của tấtcả các tr ận đấu màđội đó tham d ự. Yêu cầu sinh viên định nghĩa một cấu trúc để lưu trữ thông tin về k ết quả điểm cuối cùng của từng đội bóng trong cả mùa giải, và xây d ựng chương trìnhcómenu(2đ) thực hiện các chức năng sau: 
+1. Tao cay. Đọc d ữ liệu từ tệp “BongDa.txt” và lưu trữ điểm số của tất cả các đội bóng vào mộtcây nhị phân tìm kiếm, d ựa trên thứ tự khóa làmã đội bóng. Yêu cầu mỗi lần tạo một nút mớ ithì in ra:nút mớ i thứ  bao nhiêu,địa chỉ  của nút  đó.(2đ) 
+2. Ket qua. Hiển thị ra màn hình k ết quả củacác đội trong cây theo thứ tự tăng dần của mã đội bóng. (1.5đ) 
+3. Tim kiem. Nhậ p vào từ bàn phím mã củađội bóng bất kì. Hãy cho biếtđiểm số của đội này,nếu không tồn tại đội bóng thì in ra “Khong co doi bong nay!”. (1.5đ) 
+4. Xuong hang. Nhậ p vào từ bàn phím một số nguyên X. Hãy hiển thị mã củacác đội bóng bị xuống hạng (điểm số nhỏ hơn X).(1đ). Sau đó thực hiện xóa các đội bị xuống hạng trong câynhị phân và in cây mớ i ra màn hình.(1đ) 
+5. Xuat file. Tạo một file văn bản“KetQua.txt” vớ i nội dung là k ết quả của các đội vẫn đượ c thiđấu trong mùa giải tớ i. Trong đó mỗi dòng sẽ chứa thông tin của một đội: mã đội bóng vàđiểm (cách nhau bở i d ấu tab). (1đ) 
+Gợ i ý:
+- Mỗi nút trong cây nhị phân sẽ bao gồm 2 thông tin: mãđội bóng, điểm số của đội đó (điểmnày đượ c cậ p nhật liên tục trong quá trình xây d ựng cây.)
+- Để đọc file, vớ i mỗi dòng sinh viên có thể dùng hàm fscanf để đọc mã đội bóng và tỉ số, dùnghàm fgetc để đọc d ấu tab.
+- Để xóa các đội bị xuống hạng trong cây (câu 4), cần lưu lại mã các đội bị xuống hạng.
+
+******
+
+Đề thi môn Thực hành lập trình C cơ bản (Thời gian làm bài : 90 phút) 
+Đề 1 :  
+Dịp giáng sinh sắp tới, công ty Satan nhận được 2 danh sách đặt hàng tặng quà cho các em nhỏ.  Danh sách được lưu trong 2 files (A.txt và B.txt). Trong đó, mỗi hàng gồm các thông tin sau: 
+Mã số  của em nhỏ (số nguyên) và Đồ chơi (xâu ký tự độ dài không quá 30 ký tự) mà em đó mong muốn (có không quá 100 loại đồ chơi). Mỗi trường cách nhau bằng 1 dấu \tab. Tuy nhiên có những bạn nhỏ không thu thập được thông tin mong muốn, nên thông tin đó không có trong file. Ví dụ: 
+A.txt / B.txt 
+101 gaubong / 303 maybay 
+303 maybay / 102 oto 
+201 / 207 dientu 
+301 oto / 205
+Viết chương trình C có giao diện menu (2đ) thực hiện các công việc sau:  
+1. Đọc file A. Đọc thông tin trong file A.txt lưu thông tin vào cây nhị phân tìm kiếm (cây A) với khóa là mã số. Với những dòng thiếu thông tin, chương trình cho phép nhập thêm thông tin (2đ). Sau khi đọc xong, in toàn bộ thông tin của cây A ra màn hình với thứ tự tăng dần của mã số (1đ).
+2. Đọc file B. Đọc thông tin trong file B.txt lưu thông tin vào mảng cấu trúc và in thông tin ra màn hình (1đ).   
+3. Tìm kiếm. Do nhầm lẫn có thể có những em nhỏ có trong cả 2 file (trùng mã số). Hãy lấy từng phần tử trong mảng cấu trúc và tìm kiếm trên cây A xem có em nhỏ bị lặp lại không? Nếu có hãy in thông tin em nhỏ đó ra màn hình (1đ) và xóa thông tin của em nhỏ đó trong cây A. In lại toàn bộ cây A sau khi xóa ra màn hình (1đ).
+4. Tổng hợp. Chèn các phần tử trong mảng cấu trúc vào cây A (sau khi xóa ở bước 3). Sau đó, in thông tin cây A ra màn hình theo thứ tự giảm dần (1đ).   
+5. Thống kê. Từ cây A (sau bước 4), hãy in ra màn hình tên đồ chơi và số lượng em nhỏ đã lựa chọn (1đ). 
+
+Đề 2 :  Thông tin của sinh viên gồm các trường sau: 
+- Username (Xâu ký tự) 
+- Password (Xâu ký tự) 
+- Diem (Số thực)
+Yêu cầu về mật khẩu (password): dài ít nhất 6 ký tự và không có dấu cách. Yêu cầu về username: không chứa dấu cách. Xây dựng chương trình quản lý điểm sinh viên yêu cầu Menu gồm 2 chức năng (sau khi thực hiện chức năng 1 sẽ quay lại Menu ban đầu) (1đ) : 
+- 1. Đăng nhập 
+- 2. Thoát
+Khi bắt đầu chọn chức năng 1, chương trình hỏi người sử dụng nhập vào username và password. Kiểm tra thông tin đăng nhập từ file sinhvien.txt (như ở dưới). Trong trường hợp đăng nhập không thành công chương trình báo lỗi và yêu cầu nhập lại, nếu quá 3 lần nhập sai chươn trình sẽ tự động thoát mà không quay lại Menu ban đầu (1đ). Chương trình có 2 loại người dùng là sinh viên và người phụ trách lớp, yêu cầu cụ thể với mỗi loại người dùng như sau:
+Nếu người dùng là sinh viên, khi mật khẩu đúng chương trình in ra thông báo đăng nhập thành công và thực hiện menu con gồm 3 chức năng (3.5đ): 
+- 1. Xem điểm của sinh viên đó. 
+- 2. Thay đổi mật khẩu của mình. Chương trình yêu cầu nhập 2 lần mật khẩu mới giống nhau mới thay đổi. 
+- 3. Ghi lại thông tin lên file và thoát menu con, về menu đầu.
+Nếu người dùng là phụ trách lớp (username = Admin), khi đăng nhập thành công, chương trình thực hiện menu con gồm các chức năng sau (5.5đ) 
+- 1. Thêm một sinh viên vào hệ thống (giả thiết rằng: Admin luôn nhập từ bàn phím đầy đủ thông tin username, password, điểm và username không trùng với những username đã tồn tại).
+- 2. In ra danh sách sinh viên bao gồm username, password và điểm theo thứ tự tăng dần của từ điển (chú ý: Không in Admin). 
+- 3. Xóa sinh viên: Nhập username cần xóa, tìm kiếm, đưa ra toàn bộ thông tin về sinh viên và xóa sinh viên (Không cho xóa Admin). 
+- 4. Ghi lại thông tin lên file và thoát menu con về menu đầu.  
+Một số yêu cầu: 
+- Chương trình phải sử dụng cấu trúc cây nhị phân tìm kiếm với khóa là username để tìm kiếm người dùng và đối sánh mật khẩu, cũng như thêm người dùng mới vào hệ thống. 
+- File lưu thông tin đăng nhập (sinhvien.txt) đơn giản là file văn bản, mỗi dòng băn bản chứa: Username password và điểm (các trường cách nhau bởi dấu tab). Ví dụ: 
+Admin   Admin12  0 
+Linhnv   linh123  9
+
+Đề 4 : Một từ điển “Anh-Việt” đơn giản có dữ liệu được lưu trữ trong file “data.txt” với định dạng như sau : từ tiếng Anh rồi đến dấu tab sau đó đến từ tiếng Việt Ví dụ : 
+schoole  truong hoc 
+Giả sử rằng các từ tiếng Anh đều là các từ khoogn có chứa dấu cách và không có sự trùng lặp trong file từ điển. Từ tiếng Việt có thể có chứa dấu cách. Các từ tiếng Anh, tiếng Vệt ở dạng chữ thường và có độ dài tối đa là 20 ký tự. Sinh viên tạo cầu trúc để lưu trữ thông tin về từ điển và xây dựng chương trình có giao diện menu thưc hiện các công việc sau :
+1. Đọc file data.txt và lưu vào một cây nhị phân tìm kiếm. Việc so sánh được thực hiện dựa trên từ tiếng Anh. 
+2. Hiển thị toàn bộ dữ liệu của cây theo thứ tự tăng dần của từ tiếng Anh. 
+3. Dịch Anh-Việt. Nhập vào một xâu chỉ gồm các từ tiếng Anh ở dạng viết hoa hoặc viết thường các ký tự, chương trình dịch ra nghĩa tiếng Việt tương ứng.
+	a. Đầu tiên thực hiện tách câu ra thành từ đơn, chuyển về dạng chữ thường và hiện thị các từ này ra màn hình, mỗi từ trên một dòng 
+	b. Tiếp đó thực hiện dịch câu. Có các trường hợp sau:
+		i. Trường hợp 1: nếu tồn tại một từ không thấy trên câu thì hiển thị “Thiếu từ” và cho phép người sử dụng bổ sung từ này vào trong cây. 
+		ii. Trường hợp 2: hiển thị ra nghĩa tiếng Việt. 
+4. Sau khi kết thức chương trình, ghi lại cây vào file từ điển để cập nhật những bổ sung (nếu có) 
+Gợi ý: Để dọc file data.txt. Với mỗi dòng, sinh viên có thể dùng hàm fscanf để đọc từ tiếng Anh rồi dùng fgetc để đọc dấu tab, sau đó dùng hàm fgets để đọc từ tiếng Việt còn lại trong dòng. 
+Nội dung của file data.txt ban đầu  
+school               truong hoc 
+computer           may tinh 
+book                  sach 
+like                    thic 
+i                         toi 
+and                   va  
+
+Cho điểm  
+1. Tạo menu: 2đ 
+2. Đọc dữ liệu & tạo cây nhị phân tìm kiếm: 2đ 
+3. Duyệt và hiển thị cây: 1đ 
+4. Nhập xâu tiếng Anh 
+	a. Tách từ, chuyển về chữ thường tồi in ra màn hình: 2đ 
+	b. Dịch sang tiếng Việt 
+		i. Thiếu từ: 1đ 
+		ii. Dịch được: 1đ 
+5. Lưu lại cây vào file data.txt: 1đ 
